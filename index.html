@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>CEL at AppState</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        html { height:100%;} body { height:100%; padding: 0; margin: 0;}
+        #map {width: 100%; height: 100%;}
+    </style>
+
+      <!-- Javascript and CSS Libraries -->
+      <script src="http://cdn.leafletjs.com/leaflet/v1.7.0/leaflet.js"></script>
+      <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
+      <link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.0/dist/leaflet.css"/>
+
+      	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet"> 
+
+
+    
+  </head>
+
+
+
+
+    <div id='map'></div>
+
+      <script>
+
+     //custom basemap CEL
+       L.mapbox.accessToken = 'pk.eyJ1IjoiZ2lsbW9yZWtuIiwiYSI6ImNsbzRrcGltbTAyaXYycm84Ymx3M3V2ZDMifQ.A9CmT6xraGE2k-zAyryq9g'; 
+	   var map = L.mapbox.map('map') .setView([36.21440978296358, -81.67818643883422], 20) 
+	   .addLayer(L.mapbox.styleLayer('mapbox://styles/gilmorekn/clpimh8be00c001p7063297fv'))
+
+
+
+      </script>
+  </body>
+</html>
